@@ -48,7 +48,7 @@ router.post('/pedidos', pedidoController.nuevoPedido);
 // Mostrar pedidos
 router.get('/pedidos', pedidoController.mostrarPedidos);
 // Mostrar pedido popr local
-router.get('/pedidos/:idLocal', pedidoController.mostrarPedidosLocal)
+router.get('/pedidos-local/:idLocal', pedidoController.mostrarPedidosLocal)
 // Mostrar pedido
 router.get('/pedidos/:idPedido', pedidoController.mostrarPedido);
 // Actualizar pedido
