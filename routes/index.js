@@ -68,6 +68,7 @@ router.put('/medidas/:idMedida', medidaController.actualizarMedida);
 // Borrar insumo
 router.delete('/medidas/:idMedida', medidaController.borrarMedida);
 
+router.get('/', medidaController.mostrarMedidas);
 
 
 
