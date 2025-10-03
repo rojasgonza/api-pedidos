@@ -90,3 +90,13 @@ exports.eliminarPedido = async (req, res, next) => {
         next();
     }
 }
+exports.eliminarTodo = async (req, res, next) => {
+    try { 
+        const pedidos = await Pedidos.deleteMany({});
+        res.json({mensaje: "se borraron todos los pedidos"})
+    }
+    catch (error) {
+        console.log(error);
+        next();
+    }
+    }
