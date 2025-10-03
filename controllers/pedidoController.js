@@ -92,8 +92,8 @@ exports.eliminarPedido = async (req, res, next) => {
 }
 exports.eliminarTodo = async (req, res, next) => {
     try { 
-        const pedidos = await Pedidos.deleteMany({});
-        res.json({mensaje: "se borraron todos los pedidos"})
+        const pedidos = await Pedidos.findAll({});
+        res.json(pedidos)
     }
     catch (error) {
         console.log(error);
