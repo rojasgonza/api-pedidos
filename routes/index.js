@@ -55,7 +55,7 @@ router.get('/pedidos/:idPedido', pedidoController.mostrarPedido);
 router.put('/pedidos/:idPedido', pedidoController.actualizarPedido);
 // Borrar pedidos 8.47
 router.delete('/pedidos/:idPedido', pedidoController.eliminarPedido);
-
+router.delete('/pedidos-borrar', pedidoController.eliminarTodo);
 // INSUMOS // 
 // Agregar insumo
 router.post('/medidas', medidaController.nuevaMedida);
